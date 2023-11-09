@@ -17,9 +17,9 @@ import java.nio.file.Paths;
 
 public class WebtestInputRunner {
     private static final WebtestInputValidationErrorHandler errorHandler = new WebtestInputValidationErrorHandler();
-    private static final Path inputPath = Paths.get("src\\input\\PersonForm.wtiv");
-    private static final Path outputHtmlPath = Paths.get("src\\output\\PersonForm.html");
-    private static final Path outputJSPath = Paths.get("src\\output\\validation.js");
+    private static final Path inputPath = Paths.get("src","input", "PersonForm.wtiv");
+    private static final Path outputHtmlPath = Paths.get("src","output", "PersonForm.html");
+    private static final Path outputJSPath = Paths.get("src","output", "validation.js");
 
     public static WebtestInputValidationParser.WebtestInputContext parseWebtestInput(String source) {
         var lexer = new WebtestInputValidationLexer(CharStreams.fromString(source));

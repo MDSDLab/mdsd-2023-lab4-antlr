@@ -161,9 +161,6 @@ function resetErrorMessages() {
     $("#fnameErrorMessage").html("");
     $("#fnameError").hide();
 
-    $("#licenseErrorMessage").html("");
-    $("#licenseError").hide();
-
     $("#lnameErrorMessage").html("");
     $("#lnameError").hide();
 
